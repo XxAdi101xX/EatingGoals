@@ -1,5 +1,9 @@
 $(document).ready(function() {
-    alert('hi');
+    hi();
 });
+
+function hi() {
+    alert ('hello yall');
+}
 
 //alert('hi');
