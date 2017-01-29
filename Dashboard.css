@@ -184,11 +184,16 @@ p.description {
 
 #all-meals {
     margin-left: 2%;
-    width: 100%;
+    width: 80%;
     padding-left: 5%;
     display: inline-block;
 }
 
+.week {
+    float: left;
+    display: inline-block;
+    padding-right: 5%;
+}
 
 footer{
     background: #a9c538;
@@ -213,5 +218,5 @@ footer{
 }
 
 .footer-right {
-    float: left;  
+    float: right;  
 }
