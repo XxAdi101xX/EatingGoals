@@ -1,4 +1,6 @@
 $(document).ready(function() {
-    var lastName = localStorage.getItem("lastName");
-    //alert(lastName);
+    $(".link").click(function() {
+        var path = "Dasbboard.html"
+        window.location = path;
+    });
 });

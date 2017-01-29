@@ -11,6 +11,14 @@ h2{
     text-align: right;
     padding-left:65%;
 }
+
+.link {
+    display:inline-block;
+    position: absolute;
+    right: 760px;
+    top: 44px;
+}
+
 .mag-glass{
     display: inline-block;
     padding:2%;
@@ -133,3 +141,4 @@ td{
     margin-right: 10px;
     font-size: 20px;
 }
+
