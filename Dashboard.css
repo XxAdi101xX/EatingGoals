@@ -184,17 +184,54 @@ p.description {
 
 #all-meals {
     margin-left: 2%;
-    width: 80%;
+    width: 100%;
     padding-left: 5%;
     display: inline-block;
+}
+
+.day {
+    font-family: 'Oxygen', sans-serif;
+    border: #a9c538 3px solid;
+    background-color: white;
+    color: #a9c538;
+    margin-left: 40%;
+    width: 16%;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 3%;
+    padding: 2%;
+    z-index: 10;
+}
+
+.day-active{
+    font-family: 'Oxygen', sans-serif;
+    background-color: #a9c538;
+    color: white;
+    margin-left: 40%;
+    width: 16%;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 3%;
+    padding: 2%;
+    z-index: 10;
+    float: left;
+}
+
+.day {
+    float: left;
 }
 
 .week {
     float: left;
     display: inline-block;
-    padding-right: 5%;
 }
 
+h2.schedule {
+    font-size: 24px;
+    color: #283739;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
 footer{
     background: #a9c538;
     width : 100%;
