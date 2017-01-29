@@ -1,7 +1,7 @@
-#chart-div{
-    height:300px;
-}
+@charset "UTF-8";
+/* CSS Document */
 
+<<<<<<< Updated upstream
 #myChart {
     position:absolute;
 }
@@ -2422,4 +2422,9 @@ input[type=radio].w3-radio:disabled+.w3-validate {
 .w3-border-pale-blue,
 .w3-hover-border-pale-blue:hover {
     border-color: #e7ffff!important
+=======
+
+.header {
+    background-image:url(img/welcome.jpg)
+>>>>>>> Stashed changes
 }
