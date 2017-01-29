@@ -2,7 +2,10 @@
 <html>
     <head>
         <title>Add Food</title>
-        <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
+        <link rel="stylesheet" href="addingScreen.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script type="text/javascript" src="app.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -10,11 +13,13 @@
     </head>
 
     <body>
-        <h1>What are you eating???</hi>
-        <p>Enter food here:</p>
+        <div>
+            <h1 class="w3-text-green">EatingGoals</hi>
+            <p style="font-size:20px">What did you eat?</p>
+        </div>
 
         <form id="getFoodItemForm" action="foodForm.asp">
-            Food: <input type="text" name="Food" ><br>
+            Food: <input type="text" name="Food" ><br><br>
             Amount: <input type="text" name="Amount" size="4"><br>
             Grams <input type="checkbox" name="Grams">
             Cups <input type="checkbox" name="Cups">
