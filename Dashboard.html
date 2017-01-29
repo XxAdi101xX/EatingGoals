@@ -1,72 +1,67 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
-        <title>Dashboard</title>
-        <h2><b>#EatingGoals</b></h2>
-        <link rel="stylesheet" href="Dashboard.css">
-        
-            <p id="right-header">Idris Bohari</p>
-            <img class = "mag-glass" src = "http://www.freeiconspng.com/uploads/magnifying-glass-icon-33.png" align = "right">
-    </head>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+    <title>Dashboard</title>
+    <h2><b>#EatingGoals</b></h2>
+    <link rel="stylesheet" href="Dashboard.css">
+    <p id="right-header">Idris Bohari</p>
+    <img class="mag-glass" src="http://www.freeiconspng.com/uploads/magnifying-glass-icon-33.png" align="right">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.bundle.js"></script>
+    <script type="text/javascript" src="Dashboard.js"></script>
+</head>
 
-    <body>
-        <header class="topBanner">
-            <img src="http://www.atlantaintownpaper.com/wp-content/uploads/2013/07/home-cat.jpg" alt="LOGO HERE" id="left-header"/>
-        </header>
-        
-        <p id="date">Today-- January 29th, 2017</p>
-        <div id="calorie-container">
-            <div id="calorie-display">            
-                <h1 style="display:inline">1,300</h1>
-                <p style="display:inline;color:#a9c538;font-style:italic;">Calories</p>
-            </div>
-
-            <div id="daily-goal">
-                Daily Goal: 2,500 Cals
-            </div>
+<body>
+    <header class="topBanner">
+        <img src="http://www.atlantaintownpaper.com/wp-content/uploads/2013/07/home-cat.jpg" alt="LOGO HERE" id="left-header" />
+    </header>
+    <p id="date">Today-- January 29th, 2017</p>
+    <div id="calorie-container">
+        <div id="calorie-display">
+            <h1 style="display:inline">1,300</h1>
+            <p style="display:inline;color:#a9c538;font-style:italic;">Calories</p>
         </div>
-        <div id="food-background">
-            
-                <p id = "date2">January 28th, 2017</p>
-                <div class="foodCard" id = "card1">
-                    <p id = "foodwords1"><b>Breakfast</b></p>
-                    <p class = "foodwords1a">
-                    Cereal - 393 Cals<br>
-                    2% Milk - 42 Cals</p>               
-                    </div>
-                <div class = "foodCard" id = "card2">
-                    <p id = "foodwords2"><b>Lunch</b></p>
-                    <p class = "foodwords1a">Sandwich- 687 Cals</p>
-                </div>
-
-                <div id = "add">
-                    <p style="color: white"><strong>Add More</strong></p>
-                </div>
+        <div id="daily-goal">
+            Daily Goal: 2,500 Cals
         </div>
-        
-            <h1 style="text-align:center;color:black;font-size:40px;padding-left:0%">Progress Report</h1>
-            <p>Click certain days for more information</p>
-            
-            <div class="graph">
-                <!-- graph goes here i guess -->
-                <img src="http://www.atlantaintownpaper.com/wp-content/uploads/2013/07/home-cat.jpg" alt="GRAPH HERE" style="width:500px;height:350px">
-            </div><br><br>
-            <div id="all-meals">
-                <div class="meal-info">Breakfast</div>
-                <div class="meal-info">Lunch</div>
-                <div class="meal-info">Breakfast</div>
-                <div class="meal-info2">Lunch</div>
-                <div class="meal-info2">Breakfast</div>
-                <div class="meal-info2">Lunch</div>
-            </div>
-            
+    </div>
+    <div id="food-background">
+        <p id="date2">January 28th, 2017</p>
+        <div class="foodCard" id="card1">
+            <p id="foodwords1"><b>Breakfast</b></p>
+            <p class="foodwords1a">
+                Cereal - 393 Cals<br> 2% Milk - 42 Cals</p>
         </div>
+        <div class="foodCard" id="card2">
+            <p id="foodwords2"><b>Lunch</b></p>
+            <p class="foodwords1a">Sandwich- 687 Cals</p>
+        </div>
+        <div id="add">
+            <p id="addMore" style="color: white"><strong>Add More</strong></p>
+        </div>
+    </div>
+    <h1 style="text-align:center;color:black;font-size:40px;padding-left:0%">Progress Report</h1>
+    <p>Click certain days for more information</p>
+    <div class="graph">
+        <!-- graph goes here i guess -->
+        <img src="http://www.atlantaintownpaper.com/wp-content/uploads/2013/07/home-cat.jpg" alt="GRAPH HERE" style="width:500px;height:350px">
+    </div><br><br>
+    <div id="all-meals">
+        <div class="meal-info">Breakfast</div>
+        <div class="meal-info">Lunch</div>
+        <div class="meal-info">Breakfast</div>
+        <div class="meal-info2">Lunch</div>
+        <div class="meal-info2">Breakfast</div>
+        <div class="meal-info2">Lunch</div>
+    </div>
+    </div>
     <footer>
-    <p id = "footername">#EatingGoals</p>
-    <p id = "delta">DeltaHacks III- 2017</p>
-    <button class= "link">Profile</button>
-  </footer>
-    </body>
+        <p id="footername">#EatingGoals</p>
+        <p id="delta">DeltaHacks III- 2017</p>
+        <button class="link">Profile</button>
+    </footer>
+</body>
+
 </html>
