@@ -9,19 +9,28 @@
     <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.0/build/pure-min.css">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src = "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.bundle.js"></script>
     <script type="text/javascript" src="app.js"></script>
 </head>
 
 <body>
-    <button type="button" id="goTo">Change pages</button>
-    <div id="chart-div">
+    <button type="button" id="goTo" style="float:left; margin-left: 10px;">See Results</button>
+    <!-- <div id="chart-div">
         <canvas id="myChart" width="300px" height="300px"></canvas>
+    </div> -->
+    <div>
+        <h1 class="w3-text-green">EatingGoals</hi>
+            <p style="font-size:20px">What did you eat?</p>
     </div>
+    <form class="pure-form" id="searchForm" style="padding-bottom: 10px;">
+        Food: <input class="pure-input-rounded" id='input'><br><br> Amount: <input type="text" name="Amount" size="4"><br>
+        <button type="button" class="pure-button" onclick="searchItem()" style="margin-top: 10px;">Search Food</button>
+    </form>
+    <!--
     <form class="pure-form" id="searchForm">
         <input class="pure-input-rounded" id='input'>
         <button type="button" class="pure-button" onclick="searchItem()">Search Food</button>
-    </form>
+    </form> -->
     <div class="results"></div>
 </body>
 

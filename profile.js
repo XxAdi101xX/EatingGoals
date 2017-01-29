@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $(".link").click(function() {
-        var path = "Dasbboard.html"
+        var path = "Dashboard.html"
         window.location = path;
     });
 });

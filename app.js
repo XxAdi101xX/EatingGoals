@@ -1,4 +1,8 @@
 $(document).ready(function() {
+    $("#goTo").click(function() {
+        var path = "profile.html"
+        window.location = path;
+    });
     localStorage.setItem("age", 19);
     localStorage.setItem("profilePicture", "http://uncyclopedia.wikia.com/wiki/File:Cute-puppy.jpg");
     localStorage.setItem("weight", 6.2);
@@ -6,7 +10,7 @@ $(document).ready(function() {
     localStorage.setItem("medical_condition", "Allergic to peanuts");
     localStorage.setItem("email", "cutepuppy@gmail.com");
 
-
+/*
 var ctx = $("#myChart");
 var myChart = new Chart(ctx, {
     type: 'bar',
@@ -28,23 +32,17 @@ var myChart = new Chart(ctx, {
     options: {
         responsive: false
     }
-});
+});*/
 
-
+/*
     if (localStorage.getItem("userName") !== null) {
         var userName = document.getElementById('userName').value;
         localStorage.setItem("userName", userName);
-        localStorage.setItem("pastCalories", []);
-    } else {
-        // set the person's name to be on the landing page
-    }
-    $("#goTo").click(function() {
-        var path = "profile.html"
-        window.location = path;
-    });
+} */
+    
     //localStorage.setItem("lastname", "Smith");
     // Retrieve
-    alert(localStorage.getItem("lastname"));
+    //alert(localStorage.getItem("lastname"));
 });
 
 function getSearchResults(item) {
@@ -88,13 +86,20 @@ function getSearchResults(item) {
         },
         success: function(data) {
 			resultItems = data.hits;
+            console.log(resultItems[0].fields);
+            localStorage.setItem("calories", resultItems[0].fields.nf_calories);
+            localStorage.setItem("cholesterol", resultItems[0].fields.nf_cholesterol);
+            localStorage.setItem("serving_size_quantity", resultItems[0].fields.nf_serving_size_qty);
+            localStorage.setItem("serving_size_unit", resultItems[0].fields.nf_serving_size_unit);
+            localStorage.setItem("sugar", resultItems[0].fields.nf_sugars);
 		}	
 	});
-
+    
 	resultItems.map(function(i) {
 		var item = i.fields
 		console.log(item)
 		$('.results').append(
+            '<hr>'+
 			'<div class="itemBar">'+
 				'<h2>' + item.item_name + '<h2>' +
 				'<h3>Calories: ' + item.nf_calories + '<h3>' +
