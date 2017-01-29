@@ -1,14 +1,17 @@
 $(document).ready(function() {
     $("#goTo").click(function() {
-        var path = "profile.html"
+        var path = "dashboard.html"
         window.location = path;
     });
+    
     localStorage.setItem("age", 19);
     localStorage.setItem("profilePicture", "http://uncyclopedia.wikia.com/wiki/File:Cute-puppy.jpg");
     localStorage.setItem("weight", 6.2);
     localStorage.setItem("gender", "Male");
     localStorage.setItem("medical_condition", "Allergic to peanuts");
     localStorage.setItem("email", "cutepuppy@gmail.com");
+    localStorage.setItem("recentlyUpdated", true);
+    //alert(localStorage.getItem("age"));
 
 /*
 var ctx = $("#myChart");
