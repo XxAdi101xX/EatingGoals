@@ -1,8 +1,14 @@
-/*$(document).ready(function() {
-    hi();
-    getCalories("celery");
+$(document).ready(function() {
+//    hi();
+  //  getCalories("celery");
+$("button").click(function() {
+    var path = "addingScreen.html"
+    window.location = "addingScreen.html";
+    alert(path);
+    console.log("hi");
 });
-*/
+});
+
 function hi() {
     alert ('hello yall');
 }
@@ -22,11 +28,45 @@ function getSearchResults(item) {
 	$(".results").html("");
 
 	$.ajax({
-		type: 'GET',
+		type: "POST", // change back to get
 		async: false,
-		url: 'https://api.nutritionix.com/v1_1/search/'+item+'?fields=item_name' +
+		/*
+        url: 'https://api.nutritionix.com/v1_1/search/'+item+'?fields=item_name' +
 		'%2Citem_id%2Cbrand_name%2Cnf_calories%2Cnf_total_fat&appId=91d21742&appKey=6aac931ef97304cd15f6de495dd94d9a',
-		success: function(data) {
+		*/
+        url: "https://api.nutritionix.com/v1_1/search/",
+        data: {
+            "appId": "78868119",
+            "appKey": "2943f3b8b40aa0712387eac891c79677",
+            "fields": [
+                "item_name",
+                "brand_name",
+                "nf_calories",
+                "nf_sodium",
+                "item_type",
+                "nf_serving_size_qty",
+                "nf_total_fat",
+                "nf_serving_size_unit"
+            ],
+            "offset": 0,
+            "limit": 50,
+            "sort": {
+                "field": "nf_calories",
+                "order": "desc"
+            },
+            "min_score": 0.5,
+            "query": item,//"starbucks AND frap*",
+            "filters": {
+                "not": {
+                "item_type": 2
+                },
+                "nf_calories": {
+                "from": 0,
+                "to": 400
+                }
+            }
+        },
+        success: function(data) {
 			resultItems = data.hits;
 		}	
 	});
@@ -56,6 +96,12 @@ $("#searchForm").submit(function(e) {
     searchItem();
 });
 
+$("button").click(function() {
+    var path = "../addingScreen.html"
+    window.location = "../addingScreen.html";
+    alert(path);
+    console.log("hi");
+});
 /*
 function getData() {
     $.ajax({
