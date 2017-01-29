@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Welcome!</title>
+        <link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700" rel="stylesheet">
+        
+        <style>
+            
+           html body {
+                margin: 0;
+                padding: 0;
+                font-family: 'Oxygen', sans-serif;
+                font-weight: 300;
+                text-align: center;
+                background-color: white;
+            }
+            
+            .header {
+                background-image: url(img/Welcome/welcome.jpg);
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+                width: 100vw;
+                height: 100vh;
+                -webkit-background-size: cover;
+                      -moz-background-size: cover;
+                      -o-background-size: cover;
+                      background-size: cover;
+            }
+            
+            a:visited{
+                color: #283739;
+            }
+            
+            .element{
+                margin-left: 40%;
+                position: relative;
+                top: 85%;
+                
+            }
+            
+            .look {
+                float: left;
+                text-decoration: none;
+                position: relative;
+                font-size: 20px;
+            }
+            
+            .arrow {
+                background-image: url(img/Welcome/Shape.svg);
+                padding: 1.45% 0.9%;
+                margin-left: 3%;
+                margin-top: 0.3%;
+                animation: float 2s infinite alternate;
+                    -webkit-animation: float 2s infinite alternate;
+                float: left;    
+            }
+            
+            @keyframes float{
+                0%, 100% {
+                    transform: translateX(0);
+                }
+                 50% {
+                    transform: translateX(50%);
+                  }
+                
+            .invalid {
+                text-decoration: none;
+                font-size: 16px;
+                float: left;
+            }
+        </style>
+        
+    </head>
+    
+    
+    <body>
+        <div class="header">
+             <div class="element">
+                <a href="profile.html" class="look">Look at your results today</a>
+                    <div class="arrow float"></div>
+                </a>
+                <a href="" class="invalid"><i>Not you? Click here</i></a>
+            </div>
+        </div>
+    </body>
+</html>
