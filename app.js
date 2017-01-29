@@ -1,5 +1,10 @@
 $(document).ready(function() {
-    var pastCalories;
+    localStorage.setItem("age", 19);
+    localStorage.setItem("profilePicture", "http://uncyclopedia.wikia.com/wiki/File:Cute-puppy.jpg");
+    localStorage.setItem("weight", 6.2);
+    localStorage.setItem("gender", "Male");
+    localStorage.setItem("medical_condition", "Allergic to peanuts");
+    localStorage.setItem("email", "cutepuppy@gmail.com");
     if (localStorage.getItem("userName") !== null) {
         var userName = document.getElementById('userName').value;
         localStorage.setItem("userName", userName);
