@@ -42,6 +42,10 @@ p {
     color: black;
 }
 
+a {
+    text-decoration: none;
+}
+
 .shape {
     font-family: 'Oxygen', sans-serif;
     background-color: #a9c538;
@@ -191,14 +195,23 @@ footer{
     width : 100%;
     color: white;
     padding: 5%;
+    padding-bottom: 13%;
 }
+
 #footername,#delta{
     color: white;
     text-align: left;
-    font-weight: bold;
 }
 
 #delta {
     font-size: 15px;
     padding-left: 3%;
+}
+
+.footer-left{
+    float: left;
+}
+
+.footer-right {
+    float: left;  
 }
