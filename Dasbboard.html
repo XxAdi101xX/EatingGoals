@@ -3,112 +3,56 @@
     <head>
         <title>Dashboard</title>
         <link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700|Roboto" rel="stylesheet">
-
-        <style>
-            h1 {
-                font-family: 'Oxygen', sans-serif;
-                color: #a9c538;
-                font-size: 80px;
-                padding-left: 2%;
-                /*weight: 700;*/
-            }
-            p {
-                font-family: 'Oxygen', sans-serif;
-                text-align: center;
-                color: black;
-            }
-            .shape {
-                font-family: 'Oxygen', sans-serif;
-                background-color: #a9c538;
-                color: white;
-                position: relative;
-                margin-left: 42%;
-                height: 60px;
-                width: 12%;
-                padding: 2.5% 2% 0% 3%;
-                border-radius: 10px; 
-            }
-
-            .header {
-                text-align: center;
-            }
-
-            .topBanner {
-                text-align: left;
-                font-family: 'Oxygen', sans-serif;
-                color: black;
-            }
-
-            .foodSection {
-                background-color: #d9d9d9;
-            }
-
-            .foodCard {
-                background-color: white;
-                font-family: 'Roboto', sans-serif;
-                color: #F9A616;
-                position: relative;
-                margin-left: 42%;
-                height: 150px;
-                width: 12%;
-                padding: 2.5% 2% 0% 3%;
-                border-radius: 10px; 
-            }
-
-            .progressReport {
-                background-color: white;
-            }
-        </style>  
+        <link rel="stylesheet" href="Dashboard.css">
     </head>
 
     <body>
-        <div class="topBanner">
-            <img src="idk.jpg" alt="LOGO HERE" style="width:200px;height:75px;">
-            <p style="text-align:right;display:inline-block">Idris Bohari</p>
-            <img src="idk2.jpg" alt="magnifying glass" style="width:20px;height:20px;text-align:right;display:inline-block">
-        </div>
-
-        <div class="header">
-            <p>Today - January 29th, 2017<p>
-            <h1 style="display:inline">1,300</h1>
-            <p style="display:inline;color:#a9c538;font-style:italic">Calories</p>
-        </div>
-
-        <div class="shape">
-            Daily Goal: 2,500 Cals
-        </div>
-
-        <div class="foodSection">
-            <p style="text-align:center;padding:5%5%">January 29th, 2017</p>
-
-            <div class="foodCard">
-                Breakfast<br><br>
-                Cereal - 393 Cals<br>
-                2% Milk - 42 Cals
+        <header class="topBanner">
+            <img src="http://www.atlantaintownpaper.com/wp-content/uploads/2013/07/home-cat.jpg" alt="LOGO HERE" id="left-header""/>
+            <p id="right-header">Idris Bohari</p>
+        </header>
+        
+        <p id="date">January 29th, 2017</p>
+        <div id="calorie-container">
+            <div id="calorie-display">            
+                <h1 style="display:inline">1,300</h1>
+                <p style="display:inline;color:#a9c538;font-style:italic;">Calories</p>
             </div>
-            <br>
-            <div class="foodCard">
-                Lunch<br><br>
-                Sandwich - 687 Cals
+
+            <div id="daily-goal">
+                Daily Goal: 2,500 Cals
             </div>
         </div>
-
-        <div class="progressReport">
+        <div id="food-background">
+            <div class="foodSection"> 
+                <div class="foodCard">
+                    Breakfast<br><br>
+                    Cereal - 393 Cals<br>
+                    2% Milk - 42 Cals
+                </div>
+                <br>
+                <div class="foodCard">
+                    Lunch<br><br>
+                    Sandwich - 687 Cals
+                </div>
+            </div>
+        </div>
+        <div">
             <h1 style="text-align:center;color:black;font-size:40px;padding-left:0%">Progress Report</h1>
             <p>Click certain days for more information</p>
-            <br><br>
-            <div class="shape" style="display:inline;border-radius:15px;margin-left:40%">
-                Day
-            </div>
-            <div class="shape" style="display:inline;border-radius:15px;margin-left:5%">
-                Month
-            </div>
-
+            
             <div class="graph">
                 <!-- graph goes here i guess -->
-                <img src="graph .jpg" alt="GRAPH HERE" style="width:500px;height:350px">
+                <img src="http://www.atlantaintownpaper.com/wp-content/uploads/2013/07/home-cat.jpg" alt="GRAPH HERE" style="width:500px;height:350px">
             </div><br><br>
-
+            <div id="all-meals">
+                <div class="meal-info">Floating box</div>
+                <div class="meal-info">Floating box</div>
+                <div class="meal-info">Floating box</div>
+                <div class="meal-info">Floating box</div>
+                <div class="meal-info">Floating box</div>
+            </div>
+            <!--
             <div class="dateColumn" style="display:inline">
                 Friday January 27th
                 <div class="foodCard" style="display:inline">
@@ -140,6 +84,7 @@
                     Sandwich - 687 Cals
                 </div>
             </div>
+            -->
         </div>
     </body>
 </html>
