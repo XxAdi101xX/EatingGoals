@@ -28,17 +28,27 @@ body {font-family: "Oxygen"}
   </header>
 
   <div id = "leftbox">
-    <img class = "user-pic" src = "https://pbs.twimg.com/profile_images/458794430200152064/XdQULww6_400x400.png" style = "width:200px;height:200px">
-    <B>Pusheen the Cat</B>
-    <p class = "smalltext">◎ 2500 Calories/day</p>
-    <p class = "smalltext">🎖 3 medals</p>
+    <img id = "user-pic" src = "https://pbs.twimg.com/profile_images/458794430200152064/XdQULww6_400x400.png" style = "width:200px;height:200px">
+    <div id = ""user-display>
+      <b>Pusheen the Cat</b>
+      <p class = "smalltext">◎ 2500 Calories/day</p>
+      <p class = "smalltext">🎖 3 medals</p>
+    </div>
   </div>
   <div id = "rightbox">
-    <p>Instagram photos here pls</p>
+    <p>45 Photoes Taken</p>
+    <img style="height:70px; width: 70px;"src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Turkish_angora-cat.JPG"/>
+    <img style="height:70px; width: 70px;"src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Turkish_angora-cat.JPG"/>
+    <img style="height:70px; width: 70px;"src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Turkish_angora-cat.JPG"/>
+    <img style="height:70px; width: 70px;"src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Turkish_angora-cat.JPG"/>
+    <img style="height:70px; width: 70px;"src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Turkish_angora-cat.JPG"/>
+    <img style="height:70px; width: 70px;"src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Turkish_angora-cat.JPG"/>
+    <img style="height:70px; width: 70px;"src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Turkish_angora-cat.JPG"/>
+    <img style="height:70px; width: 70px;"src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Turkish_angora-cat.JPG"/>
   </div>
 
   <div id = "stats">
-    <div class="about">
+    <div id="about" class="main-info">
         <table>
           <tr>
             <td>Age</td><td class = "rword">19</td>
@@ -60,21 +70,41 @@ body {font-family: "Oxygen"}
           </tr>
           <tr>
             <td class = "rword"style= "text-align:left">-Allergic to peanuts</td>
-          </tr>
+          </tr>          
           </table>
           <hr>
+          <table> 
+            <tr>
+              <td>Email Address</td>
+            </tr>
+            <tr>
+              <td class = "rword"style= "text-align:left">idrisxd@gmail.com</td>
+            </tr>
+          </table>
       </div>
-
-      <div id = "Status">
-        <h5>Status: </h5><h6>Healthy</h6>
+      <div class="main-info" id="status-display">
+        Status: Healthy
+        <br>
+        <div id="award-box">
+          <br>
+          <div class="awards">
+            Trooper<br>Daily goal completed in over one week
+          </div> <br>
+          <div class="awards">
+            Met health standards continuosly for over a week
+          </div> <br>
+          <div class="awards">
+            On Fiya! <br> Maintained a streak for 14 days in a row 
+          </div>
+        </div>
       </div>
   </div>
 
-  <footer>
-    <h3>#EatingGoals</h3>
-    <h4>DeltaHacks III- 2017</h4>
-    <button class= "link">Dashboard</button>
-  </footer>
+  <div id="footer" style="display: inline-table">
+    <h3 style="padding-left: 5%;">#EatingGoals</h3>
+    <h4 style="padding-left: 42%; padding-bottom: 20px;">DeltaHacks III- 2017<button class= "link" style="float: right;background-color: red; float: center;">Dashboard</button></h4>
+    
+  </div>
 
 <script>
 // Toggle between hiding and showing blog replies/comments
