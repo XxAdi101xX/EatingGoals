@@ -2,10 +2,22 @@
 <html>
     <head>
         <title>Add Food</title>
+        <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
+
+        <script type="text/javascript" src="app.js"></script>
     </head>
 
     <body>
         <h1>What are you eating???</hi>
         <p>Enter food here:</p>
+
+        <form id="getFoodItemForm" action="foodForm.asp">
+            Food: <input type="text" name="Food" ><br>
+            Amount: <input type="text" name="Amount" size="4"><br>
+            Grams <input type="checkbox" name="Grams">
+            Cups <input type="checkbox" name="Cups">
+            Litres <input type="checkbox" name="Litres">
+            <input type="submit" value="Submit">
+        </form>
     </body>
 </html>
