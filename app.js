@@ -5,6 +5,32 @@ $(document).ready(function() {
     localStorage.setItem("gender", "Male");
     localStorage.setItem("medical_condition", "Allergic to peanuts");
     localStorage.setItem("email", "cutepuppy@gmail.com");
+
+
+var ctx = $("#myChart");
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['Item 1', 'Item 2', 'Item 3'],
+        datasets: [
+            {
+                type: 'bar',
+                label: 'Bar Component',
+                data: [10, 20, 30],
+            },
+            {
+                type: 'line',
+                label: 'Line Component',
+                data: [30, 20, 10],
+            }
+        ]
+    },
+    options: {
+        responsive: false
+    }
+});
+
+
     if (localStorage.getItem("userName") !== null) {
         var userName = document.getElementById('userName').value;
         localStorage.setItem("userName", userName);
